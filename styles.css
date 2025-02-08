@@ -1,0 +1,121 @@
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white: hsl(0, 0%, 100%);
+    --grey-700: hsl(0, 0%, 20%);
+    --grey-800: hsl(0, 0%, 12%);
+    --grey-900: hsl(0, 0%, 8%);
+}
+
+body {
+    background-color: var(--grey-900);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0;
+}
+
+.card {
+    background-color: var(--grey-800);
+    font-family: "Inter";
+    border-radius: 12px;
+    width: 100%;
+    max-width: 384px;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    gap: 24px;
+}
+
+.personal-img {
+    height: 88px;
+    width: 88px;
+    border-radius: 999px;
+}
+
+.name-loc {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+}
+
+.name {
+    color: var(--white);
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    margin: 0;
+}
+
+.location {
+    color: var(--green);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+.about {
+    color: var(--white);
+    font-weight: regular;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+    gap: 16px;
+}
+
+li {
+    background-color: var(--grey-700);
+    color: var(--white);
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    border-radius: 12px;
+    text-align: center;
+    padding: 12px;
+    transition: background-color 0.3s;
+}
+
+li a {
+    color: var(--white); 
+    text-decoration: none;
+    display: block; 
+}
+
+li:hover {
+    background-color: var(--green);
+}
+
+li:hover a {
+    color: var(--grey-700); 
+}
+
+.attribution { 
+    font-family: "Inter";
+    font-size: 11px; 
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    color: var(--white);
+}
+.attribution a { color: hsl(228, 45%, 44%); }
